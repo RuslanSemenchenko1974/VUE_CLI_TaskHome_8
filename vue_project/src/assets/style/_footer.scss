@@ -1,0 +1,63 @@
+.footer{
+    margin-bottom: 134px;
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    &__logo{
+        margin-right: 101px;
+        width: 393px;
+        display: flex;
+        flex-direction: column;
+        &__text{
+            margin-bottom: 31px;
+            color: #4D5053;
+            font-family: Jost;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 33px */
+            letter-spacing: 0.22px;
+        }
+        &__img{
+            width: 18px;
+            height: inherit;
+        }
+    }
+    &__pages{
+        margin-right: 322px;
+        width: 125px;
+        display: flex;
+        flex-direction: column;
+        &__title{
+            color: #292F36;
+            font-family: DM Serif Display;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 125%; /* 31.25px */
+        }
+        &__reference{
+            color: #4D5053;
+            font-family: Jost;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 300%; /* 66px */
+            letter-spacing: 0.22px;
+        }
+    }
+    &__contact{
+        width: 258px;
+        display: flex;
+        flex-direction: column;
+        &__text{
+            color: #4D5053;
+            font-family: Jost;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 33px */
+            letter-spacing: 0.22px;
+        }
+    }
+}

@@ -1,0 +1,84 @@
+@import 'mixins';
+$sightColor:#CDA274;
+$widthSite: 1200px;
+
+.dfjccaic{
+    @include centerFlex();
+}
+.page4_menu{
+    width: 880px;
+    height: 75px;
+    border: solid 1px $sightColor;
+    border-radius: 18px;
+    margin-bottom: 61px;
+    @include SBFlex();
+    margin-bottom: 61px;
+    &__tag{
+        width: 220px;
+        box-sizing: border-box;
+        @include centerFlex();
+        &__text{
+            color: #292F36;
+            text-align: center;
+            font-family: Jost;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 125%; /* 22.5px */
+            letter-spacing: 0.36px;
+            margin: 26px 0 26px 0;
+        }
+    }
+}
+.page4_menu__tag:hover{
+    border: solid 1px $sightColor;
+    border-radius: 18px;
+    background-color: $sightColor;
+    .page4_menu__tag__text{
+        color: #FFF;
+    }
+}
+.pag4_mainBlock{    
+    margin-left: calc(50% - $widthSite/2);
+    margin-right: calc(50% - $widthSite/2);
+    width: $widthSite;
+    max-height: 3300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 61px;
+   &__item{
+        position: relative;
+        width: 586px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        &__img{
+            width: 100%;
+            margin-bottom: 24px;
+        }
+        &__footer{
+            width: 586px;
+            @include SBFlex();
+
+        }
+        &__title{
+            color: #292F36;
+            font-family: DM Serif Display;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 125%; /* 31.25px */
+            letter-spacing: 0.5px;
+        }
+        &__text{
+            @include jost22();
+        }
+        &__star{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+   }
+}
